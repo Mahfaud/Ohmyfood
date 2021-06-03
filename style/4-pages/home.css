@@ -20,6 +20,10 @@ button {
   cursor: pointer;
 }
 
+body {
+  min-width: 320px;
+}
+
 #explorer {
   width: 100%;
 }
@@ -27,7 +31,7 @@ button {
   background-color: #f6f6f6;
   height: 240px;
   padding: 20px 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -65,11 +69,59 @@ button {
   border-radius: 30px;
   padding: 0px 5px;
   color: white;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   font-size: 15px;
   font-weight: 500;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   margin: 20px auto;
+}
+
+.operation {
+  max-width: 1440px;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.operationBox {
+  width: 100%;
+  height: 70px;
+  margin: 20px 0px;
+  padding: 0px 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: #f6f6f6;
+  position: relative;
+  transition: 0.3s;
+}
+.operationBox:hover, .operationBox:hover > .operationIcon {
+  background-color: #f5edff;
+  color: #9356DC;
+}
+.operationNumber {
+  background-color: #9356DC;
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10px;
+}
+.operationIcon {
+  width: 22px;
+  margin-right: 20px;
+  color: grey;
+}
+.operationText {
+  font-weight: 500;
+}
+
+.fa-mobile-alt::before {
+  margin-left: 3px;
 }
 
 header {
