@@ -6,10 +6,8 @@
 // Import de la réinitialisation du CSS
 
 @import '../2-basics/_base';
+@import '../2-basics/explorer';
 
 // Import du header
 @import '../3-layouts/_header';
 
-h1 {
-    color: red;
-}

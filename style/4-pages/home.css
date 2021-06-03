@@ -8,6 +8,50 @@
   list-style: none;
   background: none;
   border: none;
+  font-family: Roboto, serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#explorer {
+  width: 100%;
+}
+#explorerAbout {
+  background-color: #f6f6f6;
+  height: 250px;
+  padding: 20px 10px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#explorerAbout p, #explorerAbout h1 {
+  text-align: center;
+  margin: 10px;
+}
+#explorerAbout p {
+  font-weight: 300;
+}
+
+#search {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+#searchBar {
+  height: 40px;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+#searchIcon {
+  height: 16px;
+  width: 22px;
 }
 
 header {
@@ -22,10 +66,6 @@ header #headerLogo {
   height: 34px;
   width: 196px;
   position: absolute;
-}
-
-h1 {
-  color: red;
 }
 
 /*# sourceMappingURL=home.css.map */
