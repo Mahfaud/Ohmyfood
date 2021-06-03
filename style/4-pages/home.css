@@ -25,14 +25,15 @@ button {
 }
 #explorerAbout {
   background-color: #f6f6f6;
-  height: 250px;
+  height: 240px;
   padding: 20px 10px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
 }
 #explorerAbout p, #explorerAbout h1 {
   text-align: center;
-  margin: 10px;
+  margin: 4px 7px;
 }
 #explorerAbout p {
   font-weight: 300;
@@ -68,7 +69,7 @@ button {
   font-size: 15px;
   font-weight: 500;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 header {
