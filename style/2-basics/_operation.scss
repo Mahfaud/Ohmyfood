@@ -18,6 +18,8 @@
         transition: 0.3s;
         &:hover, &:hover > .operationIcon {
             background-color: $lightpurple;
+        }
+        &:hover > .operationIcon {
             color: $primary;
         }
         

@@ -97,6 +97,8 @@ body {
 }
 .operationBox:hover, .operationBox:hover > .operationIcon {
   background-color: #f5edff;
+}
+.operationBox:hover > .operationIcon {
   color: #9356DC;
 }
 .operationNumber {
