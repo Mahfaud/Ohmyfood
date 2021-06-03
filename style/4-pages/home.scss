@@ -1,0 +1,15 @@
+// Import des variables et mixeins
+
+@import '../1-helpers/_variables';
+@import '../1-helpers/mixins';
+
+// Import de la réinitialisation du CSS
+
+@import '../2-basics/_base';
+
+// Import du header
+@import '../3-layouts/_header';
+
+h1 {
+    color: red;
+}
