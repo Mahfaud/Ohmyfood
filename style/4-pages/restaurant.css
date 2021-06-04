@@ -41,6 +41,13 @@ main {
   margin: 20px auto;
 }
 
+.arrowBack {
+  position: absolute;
+  margin-left: 15px;
+  left: 0px;
+  top: 30px;
+}
+
 #restaurantBackground {
   height: 240px;
   width: 100%;
@@ -61,6 +68,24 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.menuService {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 25px;
+  align-self: left;
+}
+.menuBox {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 4px;
+}
+.menuBoxTitle {
+  font-family: shrikhand, serif;
+  font-size: 23px;
+  font-weight: 500;
 }
 .menuDish {
   width: 100%;
