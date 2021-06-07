@@ -48,13 +48,23 @@
         padding-left: 7px;
         display: flex;
         overflow: hidden;
+        opacity: 0;
+        @for $i from 3 through 14 {
+            &:nth-child(#{$i}) {
+                animation: slideUp 2s 0.1s*$i forwards;
+            }
+        }
         &Add {
             background-color: #99E2D0;
             height: 100%;
             width: 0px;
+            @include allCenter;
         }
         &:hover > &Add{
             animation: widthLeft 0.5s linear forwards;
+        }
+        &:hover .fa-check-circle {
+            animation: rotateIcon 0.5s forwards;
         }
         &Box {
             display: flex;
@@ -85,6 +95,19 @@
     }
 }
 
+.fa-check-circle {
+    color: white;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes widthLeft {
     0% {
         width: 0;
@@ -92,5 +115,16 @@
 
     100% {
         width: 20%;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
