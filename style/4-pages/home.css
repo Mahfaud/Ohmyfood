@@ -24,6 +24,10 @@ a {
   color: inherit;
 }
 
+main {
+  position: relative;
+}
+
 #explorer {
   width: 100%;
 }
@@ -77,6 +81,11 @@ a {
   margin: 20px auto;
 }
 
+.buttonFade:hover {
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.301);
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
+}
+
 .operation {
   max-width: 1440px;
   width: 100%;
@@ -94,6 +103,7 @@ a {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   background-color: #f6f6f6;
   position: relative;
+  cursor: pointer;
   transition: 0.3s;
 }
 .operationBox:hover, .operationBox:hover > .operationIcon {
@@ -144,6 +154,9 @@ a {
   border-radius: 15px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+}
+.restaurantLinks:hover {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.301);
 }
 .restaurantImg {
   width: 100%;

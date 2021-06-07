@@ -10,3 +10,8 @@
     background : linear-gradient(175deg, $secondary, $primary);
     margin: 20px auto;
 }
+
+.buttonFade:hover {
+    box-shadow: $largershadow;
+    background: linear-gradient(175deg, lighten($secondary, 5%),lighten($primary, 5%));
+}

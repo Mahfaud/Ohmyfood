@@ -15,6 +15,7 @@
         box-shadow: $shadow;
         background-color: $lightgrey;
         position: relative;
+        cursor: pointer;
         transition: 0.3s;
         &:hover, &:hover > .operationIcon {
             background-color: $lightpurple;

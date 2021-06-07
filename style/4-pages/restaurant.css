@@ -41,6 +41,10 @@ main {
   margin: 20px auto;
 }
 
+.buttonFade:hover {
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
+}
+
 .arrowBack {
   position: absolute;
   margin-left: 15px;
@@ -72,8 +76,16 @@ main {
 .menuService {
   font-size: 16px;
   font-weight: 300;
-  align-self: left;
   margin: 35px auto 5px 5px;
+  position: relative;
+}
+.menuService::before {
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #99E2D0;
+  position: absolute;
+  bottom: -7px;
 }
 .menuBox {
   display: flex;
