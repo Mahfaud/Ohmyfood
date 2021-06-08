@@ -91,14 +91,17 @@ main {
 .menuBox {
   display: flex;
   width: 90%;
-  justify-content: space-between;
   margin: 10px;
   padding: 4px;
+  position: relative;
 }
 .menuBoxTitle {
   font-family: shrikhand, serif;
   font-size: 23px;
   font-weight: 500;
+}
+.menuBox .heart {
+  left: 90%;
 }
 .menuDish {
   width: 100%;
@@ -219,6 +222,23 @@ main {
     opacity: 1;
   }
 }
+.heart {
+  height: 25px;
+  width: 30px;
+  stroke: black;
+  fill: white;
+  stroke-width: 20px;
+  transition: 0.5s;
+  position: absolute;
+  top: 20%;
+  left: 85%;
+}
+
+.heart:hover {
+  fill: url(#MyGradient);
+  stroke-width: 0;
+}
+
 header {
   position: relative;
   height: 70px;

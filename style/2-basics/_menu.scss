@@ -37,13 +37,16 @@
     &Box {
         display: flex;
         width: 90%;
-        justify-content: space-between;
         margin: 10px;
         padding: 4px;
+        position: relative;
         &Title {
             font-family: $font-title;
             font-size: 23px;
             font-weight: 500;
+        }
+        .heart {
+            left: 90%;
         }
     }
     &Dish {
