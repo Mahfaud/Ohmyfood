@@ -1,0 +1,49 @@
+@media screen and (min-width: 764px) {
+    .operation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &Box {
+            width: 30%;
+        }
+        &Title {
+            width: 100%;
+            height: max-content;
+            text-align: center;
+        }
+        &Text {
+            text-align: center;
+        }
+    }
+
+    .restaurant {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        &Img {
+            height: 85%;
+        }
+        &Title {
+            width: 100%;
+            height: max-content;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        &Links {
+            width: 45%;
+            height: 300px;
+        }
+    }
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        &Title {
+            width: 100%;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+    }
+}

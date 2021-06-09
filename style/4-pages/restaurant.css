@@ -66,7 +66,7 @@ main {
 header {
   position: relative;
   height: 70px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.301);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,6 +252,7 @@ header #headerLogo {
 .footerLinks {
   display: flex;
   align-items: center;
+  width: 170px;
   margin: 3px 0px;
   font-size: 14px;
 }
@@ -264,6 +265,61 @@ header #headerLogo {
 }
 .footerPartner {
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 80%;
+  }
+  .menuService {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    flex-wrap: wrap;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .menuBoxTitle {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .menuService {
+    width: 30%;
+    height: 450px;
+  }
+  .menuServiceTitle {
+    margin-bottom: 35px;
+  }
+  .menuDish {
+    width: 90%;
+    height: 70px;
+    margin-top: 20px;
+  }
+  .menuDishBox {
+    margin: 17px 0px;
+  }
+  .menu .heart {
+    left: 100%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .footerTitle {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=restaurant.css.map */

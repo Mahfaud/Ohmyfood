@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+    .menu {
+        width: 80%;
+        &Service {
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        flex-wrap: wrap;
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        margin-bottom: 10px;
+        &BoxTitle {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        &Service {
+            width: 30%;
+            height: 450px;
+            &Title {
+                margin-bottom: 35px;
+            }
+        }
+        &Dish {
+            width: 90%;
+            height: 70px;
+            margin-top: 20px;
+            &Box {
+                margin: 17px 0px;
+            }
+        }
+    .heart {
+        left: 100%;
+    }
+    }
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        &Title {
+            width: 100%;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+    }
+}
