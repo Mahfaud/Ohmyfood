@@ -22,7 +22,13 @@
     max-width: 1440px;
     margin: 210px auto auto auto;
     &Service {
+        opacity: 0;
         width: 100%;
+        @for $i from 2 through 4 {
+            &:nth-child(#{$i}) {
+                animation: slideUp 2s 0.3s*($i) forwards;
+                }
+            }
         &Title {
             font-size: 16px;
             font-weight: 300;
@@ -64,13 +70,7 @@
         padding-left: 7px;
         display: flex;
         overflow: hidden;
-        opacity: 0;
         cursor: pointer;
-        @for $i from 2 through 5 {
-            &:nth-child(#{$i}) {
-                animation: slideUp 2s 0.1s*$i forwards;
-            }
-        }
         &Add {
             background-color: #99E2D0;
             height: 100%;
