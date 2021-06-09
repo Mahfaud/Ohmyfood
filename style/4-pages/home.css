@@ -177,6 +177,7 @@ header #headerLogo {
   width: 100%;
   padding: 20px;
   padding-bottom: 30px;
+  margin: auto;
 }
 .operationBox {
   width: 100%;
@@ -230,6 +231,8 @@ header #headerLogo {
   padding-bottom: 30px;
   background-color: #f6f6f6;
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 .restaurantLinks {
   height: 200px;

@@ -12,7 +12,6 @@
 .menu {
     z-index: 10;
     position: relative;
-    margin-top: 210px;
     width: 100%;
     background-color: $lightgrey;
     border-radius: 40px;
@@ -20,6 +19,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1440px;
+    margin: 210px auto auto auto;
     &Service {
         width: 100%;
         &Title {
@@ -65,7 +66,7 @@
         overflow: hidden;
         opacity: 0;
         cursor: pointer;
-        @for $i from 1 through 10 {
+        @for $i from 2 through 5 {
             &:nth-child(#{$i}) {
                 animation: slideUp 2s 0.1s*$i forwards;
             }
