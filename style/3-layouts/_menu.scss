@@ -21,19 +21,23 @@
     align-items: center;
     flex-direction: column;
     &Service {
-        font-size: 16px;
-        font-weight: 300;
-        margin: 35px auto 5px 5px;
-        position: relative;
-        &::before {
-            content: '';
-            width: 35px;
-            height: 3px;
-            background: $tertiary;
-            position: absolute;
-            bottom: -7px;
+        width: 100%;
+        &Title {
+            font-size: 16px;
+            font-weight: 300;
+            margin: 35px auto 20px 5px;
+            position: relative;
+            &::before {
+                content: '';
+                width: 35px;
+                height: 3px;
+                background: $tertiary;
+                position: absolute;
+                bottom: -7px;
+            }
         }
     }
+
     &Box {
         display: flex;
         width: 90%;
@@ -60,7 +64,8 @@
         display: flex;
         overflow: hidden;
         opacity: 0;
-        @for $i from 3 through 14 {
+        cursor: pointer;
+        @for $i from 1 through 10 {
             &:nth-child(#{$i}) {
                 animation: slideUp 2s 0.1s*$i forwards;
             }

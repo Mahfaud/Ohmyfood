@@ -8,13 +8,14 @@
 @import '../2-basics/_base';
 @import '../2-basics/spinner';
 @import '../2-basics/heart';
-@import '../2-basics/explorer';
 @import '../2-basics/button';
-@import '../2-basics/operation';
-@import '../2-basics/restaurants';
+
 
 // Import du header
 @import '../3-layouts/_header';
+@import '../3-layouts/explorer';
+@import '../3-layouts/operation';
+@import '../3-layouts/restaurants';
 
 //Import du footer
 @import '../3-layouts/footer';
