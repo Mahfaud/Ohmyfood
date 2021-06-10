@@ -1,8 +1,9 @@
 header {
     position: relative;
     height: 70px;
-    box-shadow: $shadowblack ;
+    box-shadow: $shadow ;
     @include allCenter;
+    z-index: 3;
 
     #headerLogo {
         height: 34px;
