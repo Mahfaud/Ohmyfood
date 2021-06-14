@@ -1,10 +1,11 @@
+// Style du header
 header {
     position: relative;
     height: 70px;
     box-shadow: $shadow ;
     @include allCenter;
     z-index: 3;
-
+    // Taille et positionnement du logo du header
     #headerLogo {
         height: 34px;
         width: 196px;

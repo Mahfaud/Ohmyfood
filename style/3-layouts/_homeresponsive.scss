@@ -1,45 +1,57 @@
+// Responsive pour les restaurants -- Version Tablette et Desktop
 @media screen and (min-width: 764px) {
+    // Changement de la div operation pour un affichage en ligne
     .operation {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        // Taille des boxs des operations
         &Box {
             width: 30%;
         }
+        // Taille et positionnement des titres des operations
         &Title {
             width: 100%;
             height: max-content;
             text-align: center;
         }
+        // Alignement du texte des operations
         &Text {
             text-align: center;
         }
     }
 
+    // Changement pour un affichage en ligne et marge de la div des restaurants
     .restaurant {
         flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
         border-radius: 25px;
         margin-bottom: 25px;
+        // Taille des images des restaurants
         &Img {
             height: 85%;
         }
+        // Taille et positionnement des titres des restaurants
         &Title {
             width: 100%;
             height: max-content;
             text-align: center;
             margin-bottom: 25px;
         }
+        // Taille des liens des restaurants
         &Links {
             width: 45%;
             height: 300px;
         }
     }
+
+    // Changement du footer pour mettre les liens en ligne
     .footer {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+        // Taille et marge du titre du footer
         &Title {
             width: 100%;
             margin-bottom: 25px;

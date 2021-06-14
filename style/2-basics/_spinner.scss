@@ -1,3 +1,4 @@
+// Style de la div qui prend l'écran entier et le spinner
 .spinnerBox {
   position: fixed;
   @include allCenter;
@@ -8,7 +9,7 @@
   background-color: rgba(255, 255, 255, 0.918);
 }
 
-
+// Style du spinner
 .spinner {
   margin: 50px;
   border-top: 2px solid lighten($primary, 5%);
@@ -20,7 +21,7 @@
   animation: spin 2s linear forwards;
 }
 
-
+// Animation de rotation du spinner et changement de couleur/taille des bordures
 @keyframes spin {
   25% {
     border-top: 8px solid lighten($secondary, 5%);
@@ -42,6 +43,7 @@
   }
 }
 
+// Animation de disparition du spinner
 @keyframes hide {
   0% {
     visibility: visible;

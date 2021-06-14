@@ -1,3 +1,4 @@
+// Style du footer
 .footer {
     background-color: $darkgrey;
     padding: 15px 20px;
@@ -6,12 +7,14 @@
     flex-direction: column;
     color: white;
     font-weight: 300;
+    // Taille et style du titre du footer
     &Title {
         font-family: $font-title;
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 10px;
     }
+    // Style des liens du footer
     &Links {
         display: flex;
         align-items: center;
@@ -22,10 +25,12 @@
             text-decoration: underline;
         }
     }
+    // Taille des icones du footer
     &Icon {
         width: 10px;
         margin-right: 10px;
     }
+    // Taille des divs partner
     &Partner {
         font-weight: 500;
     }

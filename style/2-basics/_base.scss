@@ -1,5 +1,4 @@
 // Réinitialisation du CSS
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,19 +10,23 @@
     font-family: $font-text;
 }
 
+// Taille et style des h1 du site
 h1 {
     font-size: 24px;
     font-weight: 800;
 }
 
+// Style des boutons du site
 button {
     cursor: pointer;
 }
 
+// Réinitialisation des liens du site
 a {
     color: inherit;
 }
 
+// Positionnement de la div main
 main {
     position: relative;
 }

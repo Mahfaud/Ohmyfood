@@ -1,5 +1,7 @@
+// Style de la div explorer
 #explorer {
     width: 100%;
+    // Taille et style des descriptions du site
     &About {
         background-color: $lightgrey;
         height: auto;
@@ -7,10 +9,12 @@
         margin-bottom: 15px;
         display: flex;
         flex-direction: column;
+        // Marge et positionnement des paragraphes et titre de l'explorer
         p, h1 {
             text-align: center;
             margin: 4px 7px;
         }
+        // Taille et style des paragraphes de l'explorer
         p {
             font-size: 15px;
             font-weight: 300;
@@ -18,6 +22,7 @@
     }
 }
 
+// Style de la div search
 #search {
     width: 100%;
     height: 50px;
@@ -25,6 +30,7 @@
     position: relative;
     z-index: 2;
     background-color: $darkergrey;
+    // Style de la barre de recherche
     &Bar {
         height: 40px;
         width: 140px;
@@ -32,6 +38,7 @@
         font-weight: 500;
         padding-left: 10px;
     }
+    // Taille de l'icone de recherche
     &Icon {
         height: 16px;
         width: 22px;

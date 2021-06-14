@@ -1,3 +1,4 @@
+// Style de la div du fonctionnement
 .operation {
     max-width: 1440px;
     width: 100%;
@@ -5,6 +6,7 @@
     padding-bottom: 30px;
     margin: auto;
 
+    // Taille des boxs des operations
     &Box {
         width: 100%;
         height: 70px;
@@ -18,14 +20,17 @@
         position: relative;
         cursor: pointer;
         transition: 0.3s;
+        // Animation au survol sur les boxs
         &:hover, &:hover > .operationIcon {
             background-color: $lightpurple;
         }
+        // Changement de couleur des icones au survol des boxs
         &:hover > .operationIcon {
             color: $primary;
         }
         
     }
+    // Style et positionnement des numéros des operations
     &Number {
         background-color: $primary;
         color: white;
@@ -37,17 +42,20 @@
         position: absolute;
         left: -10px;
     }
+    // Style des icones des operations
     &Icon {
        width: 22px;
        margin-right: 20px;
        color: $darkgrey;
     }
+    // Taille et style du texte des opérations
     &Text {
         font-weight: 500;
         font-size: 15px;
     }
 }
 
+// Marge sur l'icone mobile
 .fa-mobile-alt::before {
     margin-left: 3px;
 }

@@ -1,3 +1,4 @@
+// Style des boutons du site
 .buttonFade {
     height: 45px;
     width: 200px;
@@ -11,6 +12,7 @@
     margin: 20px auto;
 }
 
+// Animation au survol des boutons
 .buttonFade:hover {
     box-shadow: $largershadow;
     background: linear-gradient(175deg, lighten($secondary, 5%),lighten($primary, 5%));

@@ -66,10 +66,11 @@ main {
 header {
   position: relative;
   height: 70px;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.301);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 header #headerLogo {
   height: 34px;
@@ -106,6 +107,21 @@ header #headerLogo {
   max-width: 1440px;
   margin: 210px auto auto auto;
 }
+.menuBox {
+  display: flex;
+  width: 90%;
+  margin: 10px;
+  padding: 4px;
+  position: relative;
+}
+.menuBoxTitle {
+  font-family: shrikhand, serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+.menuBox .heart {
+  left: 90%;
+}
 .menuService {
   opacity: 0;
   width: 100%;
@@ -132,21 +148,6 @@ header #headerLogo {
   background: #99E2D0;
   position: absolute;
   bottom: -7px;
-}
-.menuBox {
-  display: flex;
-  width: 90%;
-  margin: 10px;
-  padding: 4px;
-  position: relative;
-}
-.menuBoxTitle {
-  font-family: shrikhand, serif;
-  font-size: 23px;
-  font-weight: 500;
-}
-.menuBox .heart {
-  left: 90%;
 }
 .menuDish {
   width: 100%;
