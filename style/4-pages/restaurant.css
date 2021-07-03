@@ -160,6 +160,7 @@ header #headerLogo {
   display: flex;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.5s;
 }
 .menuDishAdd {
   background-color: #99E2D0;
@@ -168,12 +169,13 @@ header #headerLogo {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s linear;
 }
 .menuDish:hover > .menuDishAdd {
-  animation: widthLeft 0.5s linear forwards;
+  width: 20%;
 }
 .menuDish:hover .fa-check-circle {
-  animation: rotateIcon 0.5s forwards;
+  animation: rotateIcon 0.5s linear;
 }
 .menuDishBox {
   display: flex;
@@ -212,14 +214,6 @@ header #headerLogo {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes widthLeft {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20%;
   }
 }
 @keyframes slideUp {

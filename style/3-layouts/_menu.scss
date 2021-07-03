@@ -84,20 +84,22 @@
         display: flex;
         overflow: hidden;
         cursor: pointer;
+        transition:  transform 0.5s;
         // Taille de la div sera affiché au survol
         &Add {
             background-color: #99E2D0;
             height: 100%;
             width: 0px;
             @include allCenter;
+            transition: 0.5s linear;
         }
         // Apparition de la div Add au survol du repas
         &:hover > &Add{
-            animation: widthLeft 0.5s linear forwards;
+            width: 20%;
         }
         // Rotation de l'icone check au survol du repas
         &:hover .fa-check-circle {
-            animation: rotateIcon 0.5s forwards;
+            animation: rotateIcon 0.5s linear;
         }
         // Style de la box des repas
         &Box {
@@ -147,16 +149,6 @@
     }
 }
 
-// Animation d'aggrandissement
-@keyframes widthLeft {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 20%;
-    }
-}
 
 // Animation d'apparition et de mouvement vers le haut
 @keyframes slideUp {
